@@ -1,0 +1,140 @@
+html { 
+  background: url(elements/extrabackground.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+body{
+	margin:0;
+	padding:0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 125vh;
+	font-family: "Poppins", Sana-serif;
+	
+}
+
+.title{
+	position: absolute;
+	top:4%;
+	width: 300px;
+	height: 400px;
+	align-items: center;
+	
+}
+
+
+.box{
+	position: absolute;
+	top:20%;
+	width: 300px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #060c21;
+}
+
+.box2{
+	position: absolute;
+	top:120%;
+	width: 300px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #060c21;
+}
+
+.box3{
+	position: absolute;
+	top:120%;
+	width: 300px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #060c21;
+}
+
+.box:before, .box2:before, .box3:before{
+	content:'';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: #fff;
+	z-index: -1;
+}
+
+
+.box:after, .box2:after, .box3:before{
+	content:'';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: #fff;
+	z-index: -2;
+	filter:blur(40px);
+}
+
+.box:before, .box:after{
+	background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+}
+
+.box2:before, .box2:after{
+	background: linear-gradient(235deg, #007FFF, #E03C31, #FBEC5D);
+}
+
+.box3:before, .box3:after{
+	background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+}
+
+.content{
+	padding: 20px;
+	box-sizing: border-box;
+	color: #fff;
+}
+
+h1{
+	letter-spacing: 5px;
+	text-align:center;
+	color: #bcb400;
+}
+
+ul {
+	position:absolute;
+	left:3px;
+	top:7px;
+	font-family: "verdana", Sana-serif;
+  	background-color:black;
+	font-size:15.5px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 172.5px;
+  background-color: black;
+  border: 1px solid #555;
+  /*position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+  border-radius: 16px;
+}
+
+li a {
+  display: block;
+  color: #bcb400;
+  padding: 8px 16px;
+  text-decoration: none;
+  float: left; /*HORIZONTAL BUTTON LAYOUT*/
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #6e6900;
+  color: #bcb400;
+}
